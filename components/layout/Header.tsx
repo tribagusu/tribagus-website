@@ -1,52 +1,55 @@
-import React from "react"
 import Link from "next/link"
-import Image from "next/image"
-
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai"
-
-import github from "../../public/github-logo.png"
-import linkedin from "../../public/linkedin-logo.png"
 import styles from "../../styles/Header.module.scss"
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div>
-        <div className={styles.logo}>tribagus</div>
-        <nav className={styles.navbar}>
-          <Link href="/">
-            <p>Services</p>
+      <div className={styles.container}>
+        <div className={styles.logoNavbar}>
+          <Link href="/" className={styles.logo}>
+            <span>tri</span>Bagus
           </Link>
-          <Link href="/">
-            <p>Works</p>
-          </Link>
-          <Link href="/">
-            <p>Blogs</p>
-          </Link>
-          <Link href="/">
-            <p>Contacts</p>
-          </Link>
-        </nav>
-        <nav className={styles.contact}>
-          <Link href="/" className={styles.github}>
-            <image>
+          <div className={styles.navbar}>
+            <Link href="#works" scroll={false}>
+              <p className={styles.works}>&lt; Works &gt;</p>
+            </Link>
+            <Link href="#about" scroll={false}>
+              <p>About</p>
+            </Link>
+            <Link href="/">
+              <p>Blogs</p>
+            </Link>
+          </div>
+        </div>
+        <div className={styles.contact}>
+          <Link
+            href="https://github.com/tribagusu"
+            target="blank"
+            className={styles.github}
+          >
+            <div>
               <AiFillGithub />
-            </image>
+            </div>
             <p>Github</p>
           </Link>
-          <Link href="/" className={styles.linkedin}>
-            <image>
+          <Link
+            href="https://www.linkedin.com/in/tribagus/"
+            target="blank"
+            className={styles.linkedin}
+          >
+            <div>
               <AiFillLinkedin />
-            </image>
+            </div>
             <p>LinkedIn</p>
           </Link>
           <Link href="/" className={styles.mail}>
-            <image>
+            <div>
               <AiOutlineMail />
-            </image>
+            </div>
             <p>Mail</p>
           </Link>
-        </nav>
+        </div>
       </div>
     </header>
   )

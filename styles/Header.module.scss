@@ -1,29 +1,99 @@
 .header {
-  h1 {
-    background: tan;
-  }
-
-  .navbar {
-    background: salmon;
-  }
-
-  .contact {
-    .github {
-      image {
-        font-size: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100vw;
+  height: 90px;
+  padding: 1rem 0;
+  backdrop-filter: blur(1rem);
+  background: rgba($color: #1d1d20, $alpha: 0.2);
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 11;
+    left: 13%;
+    width: 73%;
+    padding: 10px 20px;
+    .logoNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 45%;
+      .logo {
+        letter-spacing: -5px;
+        font-size: 2rem;
+        span {
+          font-weight: 100;
+          letter-spacing: -9px;
+        }
+      }
+      .navbar {
+        display: flex;
+        gap: 2rem;
+        p {
+          padding: 0 10px;
+        }
+        .works {
+          color: #dda883;
+          font-weight: 400;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 300;
+        }
       }
     }
-
-    .linkedin {
-      image {
-        font-size: 30px;
+    .contact {
+      display: flex;
+      gap: 3rem;
+      .github {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        div {
+          display: flex;
+          margin: auto;
+          font-size: 22px;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 100;
+        }
       }
-    }
-
-    .mail {
-      image {
-        font-size: 30px;
-        color: #61faac;
+      .linkedin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        div {
+          display: flex;
+          margin: auto;
+          font-size: 22px;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 100;
+        }
+      }
+      .mail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        div {
+          display: flex;
+          margin: auto;
+          font-size: 22px;
+          color: #dda883;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 200;
+        }
       }
     }
   }
