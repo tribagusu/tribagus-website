@@ -1,0 +1,30 @@
+.header {
+  h1 {
+    background: tan;
+  }
+
+  .navbar {
+    background: salmon;
+  }
+
+  .contact {
+    .github {
+      image {
+        font-size: 30px;
+      }
+    }
+
+    .linkedin {
+      image {
+        font-size: 30px;
+      }
+    }
+
+    .mail {
+      image {
+        font-size: 30px;
+        color: #61faac;
+      }
+    }
+  }
+}
