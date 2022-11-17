@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <section className={styles.container}>
         <div className={styles.left}>
-          <h1>I believe that every problem has its own solution.</h1>
+          <h1>Every problem has its own solution. No exception.</h1>
           <div className={styles.copyright}>
             <h4>triBagus</h4>
             <small>&copy; 2022. All Rights Reserved</small>

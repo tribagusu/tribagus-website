@@ -66,7 +66,7 @@ const About = () => {
           <article className={styles.skill}>
             <div className={styles.content}>
               <h1>Back-End</h1>
-              <p>I can make API and manage it inside database..</p>
+              <p>I can make API and manage the database..</p>
               <div className={styles.stack}>
                 <div className={styles.node}>
                   <FaNodeJs />
@@ -123,12 +123,12 @@ const About = () => {
           </h1>
 
           <p>
-            I just graduated as Front-End Engineer from Binar Academy 5 months
-            intensive Bootcamp. I&apos;m capable to create frontend website
-            using React JS and Next JS, as well as other library that support
-            it. Furthermore, I&apos;m currently taking Back-End intensive
-            bootcamp. I also capable to create API from back-end and maintain
-            database with sql.
+            an adept front-end developer focusing on JavaScript, ReactJS, and
+            NextJS web development. After graduate from Front-end Bootcamp,
+            I&apos;m eager to continue my career by learning Back-end as well.
+            I&apos;m ready to learn even more by joining a company with
+            interactive team where I will continue expanding my Fullstack
+            knowledge into perfecting web-app and mobile-app.
           </p>
         </aside>
       </section>

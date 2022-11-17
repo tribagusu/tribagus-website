@@ -1,6 +1,7 @@
-import Link from "next/link"
 import { FaReact, FaNodeJs } from "react-icons/fa"
 import { SiNextdotjs, SiTypescript } from "react-icons/si"
+import TypeEffect from "./TypeEffect"
+
 import styles from "../styles/Hero.module.scss"
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
       <section className={styles.container}>
         <article className={styles.content}>
           <div className={styles.title}>
-            <p>Front-End Engineer</p>
+            <TypeEffect />
           </div>
           <h1>
             Talk is cheap
