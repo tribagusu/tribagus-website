@@ -31,7 +31,7 @@ const About = () => {
           <article className={styles.skill}>
             <div className={styles.content}>
               <h1 className={styles.mainSkill}>Front-End</h1>
-              <p>Beautiful interface with clean and neat code.</p>
+              <p>I can do all from HTML structure to unit test..</p>
               <div className={styles.stack}>
                 <div className={styles.html}>
                   <AiFillHtml5 />
@@ -66,7 +66,7 @@ const About = () => {
           <article className={styles.skill}>
             <div className={styles.content}>
               <h1>Back-End</h1>
-              <p>Robust program with seamless interaction.</p>
+              <p>I can make API and manage it inside database..</p>
               <div className={styles.stack}>
                 <div className={styles.node}>
                   <FaNodeJs />
@@ -92,7 +92,7 @@ const About = () => {
           <article className={styles.skill}>
             <div className={styles.content}>
               <h1>Design</h1>
-              <p>Create digital product with ideas</p>
+              <p>I can create design and slicing it..</p>
               <div className={styles.stack}>
                 <div className={styles.figma}>
                   <SiFigma />
@@ -117,11 +117,11 @@ const About = () => {
           </article>
         </aside>
         <aside className={styles.profile}>
-          <p>Introduce</p>
+          <p>Let me..</p>
           <h1>
             Hello! <br /> I&apos;m tri<span>Bagus</span>
           </h1>
-          <h2>Every problem has its own solution.</h2>
+
           <p>
             I just graduated as Front-End Engineer from Binar Academy 5 months
             intensive Bootcamp. I&apos;m capable to create frontend website

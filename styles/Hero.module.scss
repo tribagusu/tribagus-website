@@ -15,7 +15,7 @@
     grid-template-columns: 60% 40%;
     width: 80%;
     .content {
-      margin-top: 8rem;
+      margin-top: 12rem;
       margin-left: 10rem;
       display: flex;
       flex-direction: column;
@@ -39,12 +39,6 @@
       p {
         margin-top: 0;
         font-weight: 200;
-      }
-      .button {
-        margin-top: 3rem;
-        text-decoration: underline;
-        font-size: 18px;
-        color: #dda883;
       }
     }
     .bigCircle {

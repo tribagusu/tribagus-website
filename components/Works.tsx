@@ -1,4 +1,6 @@
 import Link from "next/link"
+import { FaReact } from "react-icons/fa"
+import { SiSass } from "react-icons/si"
 import styles from "../styles/Works.module.scss"
 
 const Works = () => {
@@ -11,29 +13,43 @@ const Works = () => {
           <div className={styles.card1}>
             <div className={styles.title}>
               <h3>Car Rental</h3>
-              <div className={styles.stack}>stack</div>
+              <div className={styles.stack}>
+                <div className={styles.react}>
+                  <FaReact />
+                </div>
+                <div className={styles.sass}>
+                  <SiSass />
+                </div>
+              </div>
             </div>
             <div className={styles.image}>image</div>
           </div>
-          <Link href="/" className={styles.projects}>
+          <Link href="/#works" className={styles.projects}>
             <h5>ALL PROJECTS</h5>
           </Link>
-          <small>
+          {/* <small>
             *Some projects are not allowed to publish by NDA, contact me if you
             want to see more.
-          </small>
+          </small> */}
         </article>
         <article className={styles.right}>
           <div className={styles.card2}>
             <div className={styles.title}>
-              <h3>Dashboard</h3>
-              <div className={styles.stack}>stack</div>
+              <h3>Rental Dashboard</h3>
+              <div className={styles.stack}>
+                <div className={styles.react}>
+                  <FaReact />
+                </div>
+                <div className={styles.sass}>
+                  <SiSass />
+                </div>
+              </div>
             </div>
             <div className={styles.image}>image</div>
           </div>
           <div className={styles.card3}>
             <div className={styles.title}>
-              <h3>Lewis</h3>
+              <h3>Blockchain</h3>
               <div className={styles.stack}>stack</div>
             </div>
             <div className={styles.image}>image</div>

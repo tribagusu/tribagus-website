@@ -15,7 +15,7 @@
     position: absolute;
     z-index: 11;
     left: 13%;
-    width: 73%;
+    width: 70%;
     padding: 10px 20px;
     .logoNavbar {
       display: flex;
@@ -23,32 +23,51 @@
       justify-content: space-between;
       width: 45%;
       .logo {
-        letter-spacing: -5px;
+        letter-spacing: -6px;
         font-size: 2rem;
         span {
           font-weight: 100;
-          letter-spacing: -9px;
+          letter-spacing: -10px;
         }
       }
       .navbar {
         display: flex;
         gap: 2rem;
         p {
+          font-size: 14px;
+          font-weight: 200;
           padding: 0 10px;
         }
-        .works {
-          color: #dda883;
+        p:hover {
           font-weight: 400;
         }
-        p {
-          font-size: 14px;
-          font-weight: 300;
+        .blog {
+          cursor: default;
+          position: relative;
+          .tooltip {
+            visibility: hidden;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 6px;
+            position: absolute;
+            left: 0;
+            top: 2.5rem;
+            z-index: 1;
+          }
+          p:hover {
+            font-weight: 200;
+          }
+        }
+        .blog:hover .tooltip {
+          visibility: visible;
         }
       }
     }
     .contact {
       display: flex;
-      gap: 3rem;
+      gap: 2rem;
       .github {
         display: flex;
         justify-content: center;
@@ -62,6 +81,9 @@
         p {
           font-size: 13px;
           font-weight: 100;
+        }
+        p:hover {
+          font-weight: 300;
         }
       }
       .linkedin {
@@ -78,12 +100,20 @@
           font-size: 13px;
           font-weight: 100;
         }
+        p:hover {
+          font-weight: 300;
+        }
       }
-      .mail {
+      .resume {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
+        padding: 0 1rem;
+        border: 1px solid rgba($color: white, $alpha: 0.5);
+        border-radius: 4px;
+        background-color: transparent;
+        cursor: pointer;
         div {
           display: flex;
           margin: auto;
@@ -93,6 +123,12 @@
         p {
           font-size: 13px;
           font-weight: 200;
+        }
+      }
+      .resume:hover {
+        border: 1px solid rgba($color: #dda883, $alpha: 0.5);
+        p {
+          color: #dda883;
         }
       }
     }

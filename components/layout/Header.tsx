@@ -1,5 +1,7 @@
 import Link from "next/link"
-import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai"
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
+import { FaFileDownload } from "react-icons/fa"
+
 import styles from "../../styles/Header.module.scss"
 
 const Header = () => {
@@ -11,21 +13,23 @@ const Header = () => {
             <span>tri</span>Bagus
           </Link>
           <div className={styles.navbar}>
-            <Link href="#works" scroll={false}>
-              <p className={styles.works}>&lt; Works &gt;</p>
-            </Link>
-            <Link href="#about" scroll={false}>
+            <Link href="/#about" scroll={false}>
               <p>About</p>
             </Link>
-            <Link href="/">
-              <p>Blogs</p>
+            <Link href="/#works" scroll={false}>
+              <p>&lt; Works &gt;</p>
+            </Link>
+            <Link href="/" className={styles.blog}>
+              <p>
+                Blogs <span className={styles.tooltip}>soon..</span>
+              </p>
             </Link>
           </div>
         </div>
         <div className={styles.contact}>
           <Link
             href="https://github.com/tribagusu"
-            target="blank"
+            target="_blank"
             className={styles.github}
           >
             <div>
@@ -35,7 +39,7 @@ const Header = () => {
           </Link>
           <Link
             href="https://www.linkedin.com/in/tribagus/"
-            target="blank"
+            target="_blank"
             className={styles.linkedin}
           >
             <div>
@@ -43,12 +47,16 @@ const Header = () => {
             </div>
             <p>LinkedIn</p>
           </Link>
-          <Link href="/" className={styles.mail}>
+          <a
+            href="/resume.pdf"
+            download="Resume - Tri Bagus"
+            className={styles.resume}
+          >
             <div>
-              <AiOutlineMail />
+              <FaFileDownload />
             </div>
-            <p>Mail</p>
-          </Link>
+            <p>Resume</p>
+          </a>
         </div>
       </div>
     </header>

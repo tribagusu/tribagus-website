@@ -9,6 +9,23 @@
     grid-template-columns: 1fr 1fr;
     gap: 10rem;
     margin: auto;
+    .stack {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .react {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        color: #5ed3f3;
+      }
+      .sass {
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
+        color: #c76395;
+      }
+    }
     .left {
       display: flex;
       flex-direction: column;
@@ -19,6 +36,7 @@
       p {
         font-weight: 200;
         margin-bottom: 7rem;
+        color: #dda883;
       }
       .card1 {
         background: rgb(19, 19, 22);
@@ -28,11 +46,13 @@
           rgb(29, 29, 31) 40%,
           rgb(54, 54, 58) 100%
         );
+        box-shadow: -5px 20px 30px 20px rgba($color: #18181b, $alpha: 0.3);
         border-radius: 10px;
-        width: 100%;
+        width: 80%;
         height: 600px;
         padding: 3rem 5rem;
         margin: 2rem 0;
+
         .title {
           display: flex;
           justify-content: space-between;
@@ -43,8 +63,12 @@
         margin-top: 3rem;
         h5 {
           font-size: 1.5rem;
+          font-weight: 400;
           text-decoration: underline;
           color: #dda883;
+        }
+        h5:hover {
+          font-weight: 500;
         }
       }
       small {
@@ -61,8 +85,9 @@
           rgb(19, 19, 20) 40%,
           rgb(37, 37, 39) 100%
         );
+        box-shadow: -5px 20px 20px 20px rgba($color: #18181b, $alpha: 0.2);
         border-radius: 10px;
-        width: 100%;
+        width: 80%;
         height: 600px;
         padding: 3rem 5rem;
         margin: 2rem 0;
@@ -80,8 +105,9 @@
           rgb(29, 29, 31) 40%,
           rgb(54, 54, 58) 100%
         );
+        box-shadow: -5px 20px 20px 20px rgba($color: #18181b, $alpha: 0.2);
         border-radius: 10px;
-        width: 100%;
+        width: 80%;
         height: 600px;
         padding: 3rem 5rem;
         margin: 2rem 0;

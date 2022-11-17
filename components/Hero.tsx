@@ -16,10 +16,7 @@ const Hero = () => {
             <br />
             Show me the code.
           </h1>
-          <p>My code is clean and neat, I said.</p>
-          <div className={styles.button}>
-            <Link href="/">LET&apos;S CHAT!</Link>
-          </div>
+          <p>My code is clean and neat. Trust me.</p>
         </article>
         <div className={styles.bigCircle}>
           <span>
