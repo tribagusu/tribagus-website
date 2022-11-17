@@ -1,6 +1,9 @@
 import Link from "next/link"
+import Image from "next/image"
 import { FaReact } from "react-icons/fa"
-import { SiSass } from "react-icons/si"
+import { SiSass, SiRedux } from "react-icons/si"
+import { FiArrowUpRight } from "react-icons/fi"
+
 import styles from "../styles/Works.module.scss"
 
 const Works = () => {
@@ -12,7 +15,16 @@ const Works = () => {
           <p>Every problem has its own solution</p>
           <div className={styles.card1}>
             <div className={styles.title}>
-              <h3>Car Rental</h3>
+              <Link
+                href="https://car-rental-customer-binar.vercel.app/"
+                target="_blank"
+                className={styles.carRental}
+              >
+                <h3>Car Rental</h3>
+                <span>
+                  <FiArrowUpRight />
+                </span>
+              </Link>
               <div className={styles.stack}>
                 <div className={styles.react}>
                   <FaReact />
@@ -20,22 +32,37 @@ const Works = () => {
                 <div className={styles.sass}>
                   <SiSass />
                 </div>
+                <div className={styles.redux}>
+                  <SiRedux />
+                </div>
               </div>
             </div>
-            <div className={styles.image}>image</div>
+            <div className={styles.image}>
+              <Image
+                src={"/rental.png"}
+                width={400}
+                height={300}
+                alt="rental"
+              />
+            </div>
           </div>
           <Link href="/#works" className={styles.projects}>
             <h5>ALL PROJECTS</h5>
           </Link>
-          {/* <small>
-            *Some projects are not allowed to publish by NDA, contact me if you
-            want to see more.
-          </small> */}
         </article>
         <article className={styles.right}>
           <div className={styles.card2}>
             <div className={styles.title}>
-              <h3>Rental Dashboard</h3>
+              <Link
+                href="https://car-rental-admin-binar.vercel.app/cars"
+                target="_blank"
+                className={styles.dashboard}
+              >
+                <h3>Dashboard</h3>
+                <span>
+                  <FiArrowUpRight />
+                </span>
+              </Link>
               <div className={styles.stack}>
                 <div className={styles.react}>
                   <FaReact />
@@ -45,11 +72,23 @@ const Works = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.image}>image</div>
+            <div className={styles.image}>
+              <Image
+                src={"/dashboard.png"}
+                width={400}
+                height={300}
+                alt="dashboard"
+              />
+            </div>
           </div>
           <div className={styles.card3}>
             <div className={styles.title}>
-              <h3>Blockchain</h3>
+              <Link href="/" target="_blank" className={styles.blockchain}>
+                <h3>Blockchain</h3>
+                <span>
+                  <FiArrowUpRight />
+                </span>
+              </Link>
               <div className={styles.stack}>stack</div>
             </div>
             <div className={styles.image}>image</div>
