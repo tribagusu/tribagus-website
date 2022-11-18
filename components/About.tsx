@@ -27,6 +27,21 @@ const About = () => {
   return (
     <main className={styles.about} id="about">
       <section className={styles.container}>
+        <aside className={styles.profile}>
+          <small>Let me..</small>
+          <h1>
+            Hello! <br /> I&apos;m tri<span>Bagus</span>
+          </h1>
+
+          <p>
+            an adept front-end developer focusing on JavaScript, ReactJS, and
+            NextJS web development. After graduate from Front-end Bootcamp,
+            I&apos;m eager to continue my career by learning Back-end as well.
+            I&apos;m ready to learn even more by joining a company with
+            interactive team where I will continue expanding my Fullstack
+            knowledge into perfecting web-app and mobile-app.
+          </p>
+        </aside>
         <aside className={styles.skills}>
           <article className={styles.skill}>
             <div className={styles.content}>
@@ -115,21 +130,6 @@ const About = () => {
               <IoIosImages />
             </div>
           </article>
-        </aside>
-        <aside className={styles.profile}>
-          <p>Let me..</p>
-          <h1>
-            Hello! <br /> I&apos;m tri<span>Bagus</span>
-          </h1>
-
-          <p>
-            an adept front-end developer focusing on JavaScript, ReactJS, and
-            NextJS web development. After graduate from Front-end Bootcamp,
-            I&apos;m eager to continue my career by learning Back-end as well.
-            I&apos;m ready to learn even more by joining a company with
-            interactive team where I will continue expanding my Fullstack
-            knowledge into perfecting web-app and mobile-app.
-          </p>
         </aside>
       </section>
     </main>

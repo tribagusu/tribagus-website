@@ -1,9 +1,11 @@
+@import "breakpoints";
+
 .header {
+  display: flex;
+  justify-content: center;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 9;
-  width: 100vw;
+  width: 100%;
   height: 90px;
   padding: 1rem 0;
   backdrop-filter: blur(1rem);
@@ -12,9 +14,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
-    z-index: 11;
-    left: 13%;
     width: 70%;
     padding: 10px 20px;
     .logoNavbar {
@@ -129,6 +128,54 @@
         border: 1px solid rgba($color: #dda883, $alpha: 0.5);
         p {
           color: #dda883;
+        }
+      }
+    }
+  }
+}
+
+//_ breakpoints
+@include xl {
+  .header {
+    .container {
+      width: 85%;
+      .logoNavbar {
+        .navbar {
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@include lg {
+  .header {
+    .container {
+      width: 90%;
+      .logoNavbar {
+        .navbar {
+          gap: 0;
+        }
+      }
+    }
+  }
+}
+
+@include md {
+  .header {
+    .container {
+      justify-content: flex-start;
+      .logoNavbar {
+        .navbar {
+          display: none;
+        }
+      }
+      .contact {
+        .github {
+          display: none;
+        }
+        .linkedin {
+          display: none;
         }
       }
     }

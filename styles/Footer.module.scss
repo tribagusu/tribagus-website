@@ -1,29 +1,29 @@
+@import "breakpoints";
+
 .footer {
-  height: 3rem;
+  display: flex;
+  justify-content: center;
   .container {
     width: 70%;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    gap: 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
     padding-bottom: 5rem;
-    margin: auto;
     border-top: 1px solid #38393d;
-
     .left {
       display: flex;
       flex-direction: column;
-      margin-left: 4rem;
       h1 {
-        width: 70%;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         font-weight: 200;
+        margin-top: 2rem;
       }
       .copyright {
         display: flex;
         align-items: center;
         gap: 3rem;
         h4 {
-          font-size: 1.3rem;
+          font-size: 1rem;
           font-weight: 100;
         }
         small {
@@ -34,9 +34,7 @@
     .right {
       display: flex;
       flex-direction: column;
-      p {
-        margin-top: 2rem;
-      }
+      margin-top: 3rem;
       h3 {
         font-size: 1rem;
         font-weight: 100;
@@ -49,9 +47,6 @@
       }
       .links {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
         gap: 1rem;
         margin-top: 1rem;
         p {
@@ -60,6 +55,27 @@
           font-size: 0.9rem;
         }
       }
+    }
+  }
+}
+//_ breakpoints
+@include xl {
+  .container {
+    width: 100%;
+    .left {
+      margin-left: 0;
+    }
+    .right {
+      margin-right: 0;
+    }
+  }
+}
+
+@include md {
+  .footer {
+    .container {
+      flex-direction: column;
+      padding-right: 5rem;
     }
   }
 }

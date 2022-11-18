@@ -13,15 +13,14 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.right}>
-          <p>Contact</p>
           <h3>Depok, West Java, Indonesia</h3>
           <h2>tribagus.indonesia@gmail.com</h2>
           <div className={styles.links}>
-            <Link href="/#works" scroll={false}>
-              <p>Works</p>
-            </Link>
             <Link href="/#about" scroll={false}>
               <p>About</p>
+            </Link>
+            <Link href="/#works" scroll={false}>
+              <p>Works</p>
             </Link>
             <Link href="/">
               <p>Blogs</p>

@@ -24,19 +24,19 @@ const Hero = () => {
             <SiNextdotjs />
           </span>
           <div className={styles.circle1}>
-            <div>
+            <span>
               <FaReact />
-            </div>
+            </span>
           </div>
           <div className={styles.circle2}>
-            <div>
+            <span>
               <SiTypescript />
-            </div>
+            </span>
           </div>
           <div className={styles.circle3}>
-            <div>
+            <span>
               <FaNodeJs />
-            </div>
+            </span>
           </div>
         </div>
       </section>
