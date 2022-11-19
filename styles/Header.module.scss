@@ -154,8 +154,11 @@
       width: 90%;
       .logoNavbar {
         .navbar {
-          gap: 0;
+          display: none;
         }
+      }
+      .contact {
+        display: none;
       }
     }
   }
@@ -175,6 +178,20 @@
           display: none;
         }
         .linkedin {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include sm {
+  .header {
+    position: inherit;
+    .container {
+      width: 100%;
+      .contact {
+        .resume {
           display: none;
         }
       }

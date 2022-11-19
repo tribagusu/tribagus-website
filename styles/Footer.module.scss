@@ -3,6 +3,7 @@
 .footer {
   display: flex;
   justify-content: center;
+  height: 300px;
   .container {
     width: 70%;
     display: flex;
@@ -13,10 +14,10 @@
     .left {
       display: flex;
       flex-direction: column;
+      margin-top: 50px;
       h1 {
         font-size: 1.2rem;
         font-weight: 200;
-        margin-top: 2rem;
       }
       .copyright {
         display: flex;
@@ -34,7 +35,7 @@
     .right {
       display: flex;
       flex-direction: column;
-      margin-top: 3rem;
+      margin-top: 70px;
       h3 {
         font-size: 1rem;
         font-weight: 100;
@@ -43,7 +44,6 @@
       h2 {
         font-size: 1rem;
         font-weight: 300;
-        // margin: 0;
       }
       .links {
         display: flex;
@@ -73,9 +73,23 @@
 
 @include md {
   .footer {
+    height: 500px;
     .container {
       flex-direction: column;
       padding-right: 5rem;
+    }
+  }
+}
+
+@include sm {
+  .footer {
+    .container {
+      padding-right: 0;
+      .left {
+        h1 {
+          font-size: 1.1rem;
+        }
+      }
     }
   }
 }

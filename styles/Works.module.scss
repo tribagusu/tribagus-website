@@ -3,10 +3,10 @@
 
 .works {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10rem 0;
-  margin: 2rem 0;
+  height: 1500px;
   .container {
     width: 70%;
     display: flex;
@@ -41,17 +41,9 @@
       p {
         font-weight: 200;
         color: #dda883;
+        margin-bottom: 10rem;
       }
-      .allProjects {
-        h5 {
-          font-size: 1.3rem;
-          font-weight: 200;
-          text-decoration: underline;
-        }
-        h5:hover {
-          font-weight: 300;
-        }
-      }
+
       .card1 {
         display: flex;
         flex-direction: column;
@@ -206,6 +198,16 @@
       }
     }
   }
+  .allProjects {
+    h5 {
+      font-size: 1.3rem;
+      font-weight: 200;
+      text-decoration: underline;
+    }
+    h5:hover {
+      font-weight: 300;
+    }
+  }
 }
 
 //_ breakpoints
@@ -219,10 +221,12 @@
 
 @include lg {
   .works {
+    height: 2500px;
     .container {
       flex-direction: column;
       .left {
         margin-left: 0;
+        margin-top: 0;
       }
       .right {
         margin-right: 0;
@@ -233,8 +237,48 @@
 
 @include md {
   .works {
-    margin-top: 15rem;
     .container {
+      .left {
+        p {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@include sm {
+  .works {
+    height: 2300px;
+    margin-bottom: 50px;
+    .container {
+      flex-direction: column;
+      .left {
+        margin-left: 0;
+        p {
+          text-align: center;
+        }
+        .card1 {
+          width: 360px;
+          .title {
+            flex-direction: column;
+          }
+        }
+      }
+      .right {
+        .card2 {
+          width: 360px;
+          .title {
+            flex-direction: column;
+          }
+        }
+        .card3 {
+          width: 360px;
+          .title {
+            flex-direction: column;
+          }
+        }
+      }
     }
   }
 }

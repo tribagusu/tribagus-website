@@ -3,7 +3,7 @@
 .hero {
   display: flex;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
   padding-top: 6rem;
   .container {
     display: grid;
@@ -121,16 +121,24 @@
 //_ Breakpoints
 @include xl {
   .hero {
-    height: 80vh;
+    height: 90vh;
     .container {
       grid-template-columns: 60% 40%;
       width: 90%;
       .content {
-        margin-left: 7rem;
+        margin-left: 4rem;
       }
       .bigCircle {
         height: 350px;
         width: 350px;
+        .circle1 {
+          height: 120px;
+          width: 120px;
+        }
+        .circle2 {
+          height: 100px;
+          width: 100px;
+        }
       }
     }
   }
@@ -138,17 +146,23 @@
 
 @include lg {
   .hero {
-    height: 85vh;
+    height: 90vh;
     .container {
       .content {
-        margin-left: 5rem;
+        margin-left: 2rem;
+        h1 {
+          font-size: 2.7rem;
+        }
       }
       .bigCircle {
-        margin-top: 1rem;
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
         span {
-          font-size: 10rem;
+          font-size: 7rem;
+        }
+        .circle1 {
+          height: 120px;
+          width: 120px;
         }
       }
     }
@@ -158,17 +172,65 @@
 @include md {
   .hero {
     height: 100vh;
+    padding-top: 0;
     .container {
       grid-template-columns: 1fr;
       .content {
         margin-left: 0;
         align-items: center;
         h1 {
+          font-size: 2.7rem;
           text-align: center;
         }
       }
       .bigCircle {
-        display: none;
+        left: 200px;
+        top: -40px;
+      }
+    }
+  }
+}
+
+@include sm {
+  .hero {
+    height: 70vh;
+    padding-top: 0;
+    .container {
+      .content {
+        margin-top: 5rem;
+        h1 {
+          font-size: 2rem;
+          margin-top: 3rem;
+          font-weight: 400;
+        }
+        p {
+          font-weight: 100;
+          font-size: 0.8rem;
+        }
+      }
+      .bigCircle {
+        height: 200px;
+        width: 200px;
+        left: 80px;
+        top: 0;
+        span {
+          font-size: 7rem;
+        }
+        .circle1 {
+          height: 90px;
+          width: 90px;
+          span {
+            font-size: 2.5rem;
+          }
+        }
+        .circle2 {
+          height: 80px;
+          width: 80px;
+        }
+        .circle3 {
+          height: 50px;
+          width: 50px;
+        }
       }
     }
   }

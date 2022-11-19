@@ -13,9 +13,6 @@ const Works = () => {
         <article className={styles.left}>
           <h2>Latest Works</h2>
           <p>Every problem has its own solution</p>
-          <Link href="/#works" className={styles.allProjects}>
-            <h5>ALL PROJECTS</h5>
-          </Link>
           <div className={styles.card1}>
             <div className={styles.title}>
               <Link
@@ -44,8 +41,8 @@ const Works = () => {
               <Image
                 className={styles.imageContent}
                 src={"/rental.png"}
-                width={380}
-                height={280}
+                width={350}
+                height={250}
                 alt="rental"
                 style={{ borderRadius: "8px" }}
               />
@@ -81,8 +78,8 @@ const Works = () => {
               <Image
                 src={"/dashboard.png"}
                 alt="dashboard"
-                width={380}
-                height={280}
+                width={350}
+                height={250}
                 style={{ borderRadius: "8px" }}
               />
             </div>
@@ -101,6 +98,9 @@ const Works = () => {
           </div>
         </article>
       </section>
+      <Link href="/#works" className={styles.allProjects}>
+        <h5>ALL PROJECTS</h5>
+      </Link>
     </main>
   )
 }

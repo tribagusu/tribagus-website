@@ -27,25 +27,15 @@ const About = () => {
   return (
     <main className={styles.about} id="about">
       <section className={styles.container}>
-        <aside className={styles.profile}>
-          <small>Let me..</small>
-          <h1>
-            Hello! <br /> I&apos;m tri<span>Bagus</span>
-          </h1>
-
-          <p>
-            an adept front-end developer focusing on JavaScript, ReactJS, and
-            NextJS web development. After graduate from Front-end Bootcamp,
-            I&apos;m eager to continue my career by learning Back-end as well.
-            I&apos;m ready to learn even more by joining a company with
-            interactive team where I will continue expanding my Fullstack
-            knowledge into perfecting web-app and mobile-app.
-          </p>
-        </aside>
-        <aside className={styles.skills}>
-          <article className={styles.skill}>
+        <aside className={styles.cards}>
+          <article className={styles.card}>
             <div className={styles.content}>
-              <h1 className={styles.mainSkill}>Front-End</h1>
+              <div className={styles.skill}>
+                <h1 className={styles.mainSkill}>Front-End</h1>
+                <div className={styles.logo}>
+                  <BsTerminal />
+                </div>
+              </div>
               <p>I can do all from HTML structure to unit test..</p>
               <div className={styles.stack}>
                 <div className={styles.html}>
@@ -74,13 +64,15 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.logo}>
-              <BsTerminal />
-            </div>
           </article>
-          <article className={styles.skill}>
+          <article className={styles.card}>
             <div className={styles.content}>
-              <h1>Back-End</h1>
+              <div className={styles.skill}>
+                <h1>Back-End</h1>
+                <div className={styles.logo}>
+                  <ImBarcode />
+                </div>
+              </div>
               <p>I can make API and manage the database..</p>
               <div className={styles.stack}>
                 <div className={styles.node}>
@@ -100,13 +92,15 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.logo}>
-              <ImBarcode />
-            </div>
           </article>
-          <article className={styles.skill}>
+          <article className={styles.card}>
             <div className={styles.content}>
-              <h1>Design</h1>
+              <div className={styles.skill}>
+                <h1>Design</h1>
+                <div className={styles.logo}>
+                  <IoIosImages />
+                </div>
+              </div>
               <p>I can create design and slicing it..</p>
               <div className={styles.stack}>
                 <div className={styles.figma}>
@@ -126,10 +120,22 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.logo}>
-              <IoIosImages />
-            </div>
           </article>
+        </aside>
+        <aside className={styles.profile}>
+          <small>Let me..</small>
+          <h1>
+            Hello! <br /> I&apos;m tri<span>Bagus</span>
+          </h1>
+
+          <p>
+            an adept front-end developer focusing on JavaScript, ReactJS, and
+            NextJS web development. After graduate from Front-end Bootcamp,
+            I&apos;m eager to continue my career by learning Back-end as well.
+            I&apos;m ready to learn even more by joining a company with
+            interactive team where I will continue expanding my Fullstack
+            knowledge into perfecting web-app and mobile-app.
+          </p>
         </aside>
       </section>
     </main>
