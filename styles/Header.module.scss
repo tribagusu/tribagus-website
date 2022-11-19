@@ -157,9 +157,6 @@
           display: none;
         }
       }
-      .contact {
-        display: none;
-      }
     }
   }
 }
@@ -174,10 +171,7 @@
         }
       }
       .contact {
-        .github {
-          display: none;
-        }
-        .linkedin {
+        .resume {
           display: none;
         }
       }
@@ -191,9 +185,7 @@
     .container {
       width: 100%;
       .contact {
-        .resume {
-          display: none;
-        }
+        display: none;
       }
     }
   }

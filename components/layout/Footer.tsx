@@ -16,14 +16,11 @@ const Footer = () => {
           <h3>Depok, West Java, Indonesia</h3>
           <h2>tribagus.indonesia@gmail.com</h2>
           <div className={styles.links}>
-            <Link href="/#about" scroll={false}>
-              <p>About</p>
+            <Link href="https://github.com/tribagusu" target="_blank">
+              <p>Github</p>
             </Link>
-            <Link href="/#works" scroll={false}>
-              <p>Works</p>
-            </Link>
-            <Link href="/">
-              <p>Blogs</p>
+            <Link href="https://www.linkedin.com/in/tribagus/" target="_blank">
+              <p>LinkedIn</p>
             </Link>
           </div>
         </div>

@@ -136,6 +136,8 @@ const About = () => {
             interactive team where I will continue expanding my Fullstack
             knowledge into perfecting web-app and mobile-app.
           </p>
+          <br />
+          <small>Interest: tech, blockchain, bitter coffee</small>
         </aside>
       </section>
     </main>
