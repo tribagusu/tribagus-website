@@ -182,10 +182,22 @@
 @include sm {
   .header {
     position: inherit;
+    background: rgba($color: #1d1d20, $alpha: 0.5);
+    height: 70px;
     .container {
       width: 100%;
-      .contact {
-        display: none;
+      .logoNavbar {
+        .logo {
+          letter-spacing: -6px;
+          font-size: 1.7rem;
+          span {
+            font-weight: 100;
+            letter-spacing: -10px;
+          }
+        }
+        .contact {
+          // display: none;
+        }
       }
     }
   }

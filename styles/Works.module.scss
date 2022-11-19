@@ -51,8 +51,8 @@
         background: rgb(19, 19, 22);
         background: linear-gradient(
           140deg,
-          rgb(29, 29, 32) 0%,
-          rgb(29, 29, 31) 40%,
+          rgb(42, 42, 46) 0%,
+          rgb(33, 33, 36) 40%,
           rgb(54, 54, 58) 100%
         );
         box-shadow: -5px 20px 30px 20px rgba($color: #18181b, $alpha: 0.3);
@@ -92,7 +92,7 @@
         .image {
           display: flex;
           justify-content: center;
-          box-shadow: -5px 5px 20px 20px rgba($color: #18181b, $alpha: 0.3);
+          box-shadow: -5px 5px 20px 20px rgba($color: #18181b, $alpha: 0.5);
         }
       }
     }
@@ -109,9 +109,9 @@
         background: rgb(19, 19, 22);
         background: linear-gradient(
           240deg,
-          rgb(17, 17, 19) 0%,
-          rgb(19, 19, 20) 40%,
-          rgb(37, 37, 39) 100%
+          rgb(42, 42, 46) 0%,
+          rgb(33, 33, 36) 40%,
+          rgb(43, 43, 46) 100%
         );
         box-shadow: -5px 20px 20px 20px rgba($color: #18181b, $alpha: 0.2);
         border-radius: 10px;
@@ -150,16 +150,16 @@
         .image {
           display: flex;
           justify-content: center;
-          box-shadow: -5px 20px 20px 20px rgba($color: #18181b, $alpha: 1);
+          box-shadow: -5px 20px 20px 20px rgba($color: #18181b, $alpha: 0.5);
         }
       }
       .card3 {
         background: rgb(19, 19, 22);
         background: linear-gradient(
           200deg,
-          rgb(29, 29, 32) 0%,
-          rgb(29, 29, 31) 40%,
-          rgb(54, 54, 58) 100%
+          rgb(42, 42, 46) 0%,
+          rgb(33, 33, 36) 40%,
+          rgb(43, 43, 46) 100%
         );
         box-shadow: -5px 20px 20px 20px rgba($color: #18181b, $alpha: 0.2);
         border-radius: 10px;
