@@ -178,7 +178,7 @@
           text-align: center;
         }
         p {
-          font-size: 1rem;
+          font-size: 16px;
         }
       }
     }
@@ -187,7 +187,7 @@
 
 @include sm {
   .about {
-    height: 1500px;
+    height: 1350px;
     .container {
       .cards {
         .card {

@@ -3,18 +3,19 @@
 .footer {
   display: flex;
   justify-content: center;
-  height: 300px;
+  min-height: 200px;
+
   .container {
     width: 70%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15%;
-    padding-bottom: 5rem;
     border-top: 1px solid #38393d;
+    padding: 4rem 0;
     .left {
       display: flex;
       flex-direction: column;
-      margin-top: 50px;
       h1 {
         font-size: 1.2rem;
         font-weight: 200;
@@ -35,7 +36,6 @@
     .right {
       display: flex;
       flex-direction: column;
-      margin-top: 70px;
       h3 {
         font-size: 1rem;
         font-weight: 100;
@@ -76,21 +76,17 @@
 
 @include md {
   .footer {
-    height: 500px;
     .container {
       flex-direction: column;
+      align-items: flex-start;
       padding-right: 5rem;
       gap: 0;
-      .left {
-        margin-top: 0;
-      }
     }
   }
 }
 
 @include sm {
   .footer {
-    height: 450px;
     .container {
       padding-right: 0;
       .left {
