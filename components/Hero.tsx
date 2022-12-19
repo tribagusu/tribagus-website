@@ -13,11 +13,13 @@ const Hero = () => {
             <TypeEffect />
           </div>
           <h1>
-            Talk is cheap
+            Hi, I am a
             <br />
-            Show me the code.
+            Web Developer.
           </h1>
-          <p>My code is clean and neat. Trust me.</p>
+          <p>
+            I like to craft solid and scalable web with great user experiences.
+          </p>
         </article>
         <div className={styles.bigCircle}>
           <span>

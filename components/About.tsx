@@ -124,7 +124,7 @@ const About = () => {
         </aside>
         <aside className={styles.profile}>
           <h1>
-            Hello! <br /> I&apos;m tri<span>Bagus</span>
+            I&apos;m tri<span>Bagus</span>
           </h1>
           <p>
             an adept front-end developer focusing on JavaScript, ReactJS, and

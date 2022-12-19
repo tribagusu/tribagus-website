@@ -20,6 +20,7 @@
         line-height: 1;
       }
       p {
+        width: 50%;
         margin-top: 0;
         font-weight: 200;
       }
@@ -182,6 +183,10 @@
           font-size: 2.7rem;
           text-align: center;
         }
+        p {
+          text-align: center;
+          width: 70%;
+        }
       }
       .bigCircle {
         left: 200px;
@@ -206,6 +211,7 @@
         p {
           font-weight: 100;
           font-size: 0.8rem;
+          width: 80%;
         }
       }
       .bigCircle {

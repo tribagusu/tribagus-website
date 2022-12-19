@@ -1,10 +1,13 @@
 import Link from "next/link"
 import Image from "next/image"
 import { FaReact } from "react-icons/fa"
-import { SiSass, SiRedux } from "react-icons/si"
+import { SiSass, SiRedux, SiNextdotjs } from "react-icons/si"
 import { FiArrowUpRight } from "react-icons/fi"
 import { TbBrandReactNative } from "react-icons/tb"
 import styles from "../styles/Works.module.scss"
+import img1 from "../public/rental.png"
+import img2 from "../public/dashboard.png"
+import img3 from "../public/tenggara-web.png"
 
 const Works = () => {
   return (
@@ -40,11 +43,9 @@ const Works = () => {
             <div className={styles.image}>
               <Image
                 className={styles.imageContent}
-                src={"/rental.png"}
-                width={350}
-                height={250}
+                src={img1}
                 alt="rental"
-                style={{ borderRadius: "8px" }}
+                style={{ borderRadius: "8px", width: "100%", height: "100%" }}
               />
             </div>
           </div>
@@ -76,25 +77,43 @@ const Works = () => {
             </div>
             <div className={styles.image}>
               <Image
-                src={"/dashboard.png"}
+                src={img2}
                 alt="dashboard"
-                width={350}
-                height={250}
-                style={{ borderRadius: "8px" }}
+                style={{ borderRadius: "8px", width: "100%", height: "100%" }}
               />
             </div>
           </div>
           <div className={styles.card3}>
             <div className={styles.title}>
-              <Link href="/" target="_blank" className={styles.blockchain}>
+              <Link
+                href="https://www.tenggara.dev/"
+                target="_blank"
+                className={styles.blockchain}
+              >
                 <h3>Blockchain</h3>
                 <span>
                   <FiArrowUpRight />
                 </span>
               </Link>
-              <div className={styles.stack}>stack</div>
+              <div className={styles.stack}>
+                <div className={styles.next}>
+                  <SiNextdotjs />
+                </div>
+                <div className={styles.sass}>
+                  <SiSass />
+                </div>
+                <div className={styles.query}>
+                  <TbBrandReactNative />
+                </div>
+              </div>
             </div>
-            <div className={styles.image}>image</div>
+            <div className={styles.image}>
+              <Image
+                src={img3}
+                alt="dashboard"
+                style={{ borderRadius: "8px", width: "100%", height: "100%" }}
+              />
+            </div>
           </div>
         </article>
       </section>

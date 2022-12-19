@@ -28,6 +28,9 @@
       .query {
         @include stack(#f73f51);
       }
+      .next {
+        @include stack(#fff);
+      }
     }
     .left {
       display: flex;
@@ -154,6 +157,9 @@
         }
       }
       .card3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         background: rgb(19, 19, 22);
         background: linear-gradient(
           200deg,
@@ -195,6 +201,11 @@
             }
           }
         }
+        .image {
+          display: flex;
+          justify-content: center;
+          box-shadow: -5px 20px 20px 20px rgba($color: #18181b, $alpha: 0.5);
+        }
       }
     }
   }
@@ -223,6 +234,7 @@
   .works {
     height: 2500px;
     .container {
+      gap: 0;
       flex-direction: column;
       .left {
         margin-left: 0;
@@ -249,7 +261,7 @@
 
 @include sm {
   .works {
-    height: 2300px;
+    height: 2100px;
     margin-bottom: 50px;
     .container {
       flex-direction: column;
@@ -259,7 +271,9 @@
           text-align: center;
         }
         .card1 {
-          width: 360px;
+          padding: 2rem;
+          width: 350px;
+          height: 450px;
           .title {
             flex-direction: column;
           }
@@ -267,13 +281,17 @@
       }
       .right {
         .card2 {
-          width: 360px;
+          padding: 2rem;
+          width: 350px;
+          height: 450px;
           .title {
             flex-direction: column;
           }
         }
         .card3 {
-          width: 360px;
+          width: 350px;
+          padding: 2rem;
+          height: 450px;
           .title {
             flex-direction: column;
           }
