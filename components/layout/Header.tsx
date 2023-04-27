@@ -1,8 +1,8 @@
-import Link from "next/link"
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
-import { FaFileDownload } from "react-icons/fa"
+import Link from "next/link";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { FaFileDownload } from "react-icons/fa";
 
-import styles from "../../styles/Header.module.scss"
+import styles from "../../styles/Header.module.scss";
 
 const Header = () => {
   return (
@@ -60,7 +60,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
